@@ -24,7 +24,6 @@ composer install OR composer update
 cp .env.example .env
 php artisan key:generate
 cd public
-git clone https://github.com/LiveHelperChat/livehelperchat.git
 ln -s livehelperchat/lhc_web/ezcomponents
 ln -s livehelperchat/lhc_web/lib
 ln -s livehelperchat/lhc_web/modules
