@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LegacyController;
+use App\Http\Controllers\WidgetController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,3 +14,4 @@ use App\Http\Controllers\LegacyController;
 |
 */
 Route::any('/dummy', [LegacyController::class, 'index'])->name( 'lhc.start_me');
+Route::get('/widget',[WidgetController::class,'index'])->name('widget');
