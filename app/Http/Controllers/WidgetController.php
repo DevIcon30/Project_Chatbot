@@ -11,4 +11,9 @@ class WidgetController extends Controller
         $title  = 'test widget';
         return view('samples.widget',compact('title'));
     }
+
+    public function post(Request $request)
+    {
+        return redirect()->back()->with('success','test berhasil');
+    }
 }
