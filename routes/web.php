@@ -14,4 +14,4 @@ use App\Http\Controllers\WidgetController;
 |
 */
 Route::any('/dummy', [LegacyController::class, 'index'])->name( 'lhc.start_me');
-Route::get('/widget',[WidgetController::class,'index'])->name('widget');
+Route::get('/chat',[WidgetController::class,'index'])->name('widget');

@@ -24,6 +24,7 @@ composer install OR composer update
 cp .env.example .env
 php artisan key:generate
 cd public
+mv livehelperchat-master livehelperchat
 ln -s livehelperchat/lhc_web/ezcomponents
 ln -s livehelperchat/lhc_web/lib
 ln -s livehelperchat/lhc_web/modules
@@ -52,6 +53,10 @@ You now might need to follow standard Laravel install procedure.
 After install don't forget to edit `.env` file and put database logins.
 
 Now in any extension or core file you should be able to use any Laravel class and vica versa.
+
+## NOTES
+
+rename at folder livehelperchat-master || mv livehelperchat-master livehelperchat
 
 ## MADE IN KONGO
 
