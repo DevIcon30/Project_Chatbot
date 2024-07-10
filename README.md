@@ -57,6 +57,7 @@ Now in any extension or core file you should be able to use any Laravel class an
 ## NOTES
 
 rename at folder livehelperchat-master || mv livehelperchat-master livehelperchat
+perbaikan FE ada di route /chat || views/chat.blade.php
 
 ## MADE IN KONGO
 

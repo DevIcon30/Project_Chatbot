@@ -1,1 +1,0 @@
-ALTER TABLE `lh_abstract_chat_variable` ADD `content_field` varchar(50) NOT NULL, COMMENT='';

@@ -1,1 +1,0 @@
-ALTER TABLE `lh_chat` ADD INDEX `phone` (`phone`);

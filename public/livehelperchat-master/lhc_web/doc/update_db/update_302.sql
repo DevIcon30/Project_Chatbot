@@ -1,1 +1,0 @@
-ALTER TABLE `lh_userdep` ADD INDEX `online_op_widget` (`last_activity`,`user_id`,`dep_id`,`always_on`);
