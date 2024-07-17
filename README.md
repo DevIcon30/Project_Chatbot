@@ -66,14 +66,17 @@ Requirement
 * node module V.18
 * npm version
 * Ngrok authenticate
+* database connect to livehelperchat
 
 ## NOTES
 
 * rename at folder livehelperchat-master || mv livehelperchat-master livehelperchat
 * perbaikan FE ada di route:"/chat"|| views/chat.blade.php
+* Folder html nya ada di /public/widget
 * inject database in folder Webhook-js/database.sql to mysql
 * port connection database default: admin/updatadata/8889
 * setup in folder database /public/settings/settings.ini.php
+* masih error ngepost ke db pakai NGROK
 
 ## MADE IN KONGO
 
