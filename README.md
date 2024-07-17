@@ -19,6 +19,12 @@ For the most common Live Helper Chat classes read
  * https://doc.livehelperchat.com/docs/development/orm to work with LHC database most common methods
  * https://doc.livehelperchat.com/docs/development/common-classes the most commit LHC classes
 
+Requirment
+* php 7.3 | 8.0
+* mysql
+* composer version
+* 
+
 ```shell script
 composer install OR composer update
 cp .env.example .env
@@ -54,10 +60,20 @@ After install don't forget to edit `.env` file and put database logins.
 
 Now in any extension or core file you should be able to use any Laravel class and vica versa.
 
+## Setup for backend webhook with Express.js
+
+Requirement
+* node module V.18
+* npm version
+* Ngrok authenticate
+
 ## NOTES
 
-rename at folder livehelperchat-master || mv livehelperchat-master livehelperchat
-perbaikan FE ada di route /chat || views/chat.blade.php
+* rename at folder livehelperchat-master || mv livehelperchat-master livehelperchat
+* perbaikan FE ada di route:"/chat"|| views/chat.blade.php
+* inject database in folder Webhook-js/database.sql to mysql
+* port connection database default: admin/updatadata/8889
+* setup in folder database /public/settings/settings.ini.php
 
 ## MADE IN KONGO
 

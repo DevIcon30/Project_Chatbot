@@ -96,6 +96,8 @@ if ($userData->inactive_mode == 1) {
         $userDataTemp->always_on = $userData->always_on;
 
         erLhcoreClassUserDep::setHideOnlineStatus($userDataTemp);
+
+        erLhcoreClassChatEventDispatcher::getInstance()->dispatch('chat.operator_inactivemode_changed', array('user' => & $userData, 'reason' => 'page_reload'));
     }
     
     erLhcoreClassUser::getSession()->update($userData);
@@ -116,7 +118,7 @@ if ($activityTimeout == -1) {
 $trackActivity = (int)erLhcoreClassModelChatConfig::fetchCache('activity_track_all')->current_value;
 
 if ($trackActivity == 0) {
-    $trackActivity = erLhcoreClassModelUserSetting::getSetting('trackactivity',0);
+    $trackActivity = (int)erLhcoreClassModelUserSetting::getSetting('trackactivity',0);
 }
 
 $chatDel = array();

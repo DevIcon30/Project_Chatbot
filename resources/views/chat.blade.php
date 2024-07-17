@@ -56,7 +56,7 @@
             s.parentNode.insertBefore(po, s);
         })();
     </script>
-    <script>
+    <<script>
         var LHC_API = LHC_API||{};
         LHC_API = {
         "args": {
