@@ -4,5 +4,5 @@ package-lock.json
 composer.phar
 post_deploy.sh
 translations/trans/
-cache/default.log
+# cache/default.log
 /.idea/
