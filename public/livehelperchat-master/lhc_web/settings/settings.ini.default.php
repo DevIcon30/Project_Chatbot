@@ -35,6 +35,7 @@ return array (
                     'extensions' =>
                         array (
                             // 0 => 'customstatus',
+                            'lhctelegram'
                         ),
                     'available_site_access' =>
                         array (

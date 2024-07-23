@@ -29,22 +29,22 @@ Requirment
 composer install OR composer update
 cp .env.example .env
 php artisan key:generate
-# cd public
-# mv livehelperchat-master livehelperchat
-# ln -s livehelperchat/lhc_web/ezcomponents
-# ln -s livehelperchat/lhc_web/lib
-# ln -s livehelperchat/lhc_web/modules
-# ln -s livehelperchat/lhc_web/pos
-# ln -s livehelperchat/lhc_web/extension
-# ln -s livehelperchat/lhc_web/design
-# ln -s livehelperchat/lhc_web/translations
-# ln -s livehelperchat/lhc_web/var
-# ln -s livehelperchat/lhc_web/settings
-# ln -s livehelperchat/lhc_web/cache
-# chown apache:apache -R cache/
-# chown apache:apache -R var/
-# chown apache:apache settings/
-# chmod -R 755 cache/
+cd public
+mv livehelperchat-master livehelperchat
+ln -s livehelperchat/lhc_web/ezcomponents
+ln -s livehelperchat/lhc_web/lib
+ln -s livehelperchat/lhc_web/modules
+ln -s livehelperchat/lhc_web/pos
+ln -s livehelperchat/lhc_web/extension
+ln -s livehelperchat/lhc_web/design
+ln -s livehelperchat/lhc_web/translations
+ln -s livehelperchat/lhc_web/var
+ln -s livehelperchat/lhc_web/settings
+ln -s livehelperchat/lhc_web/cache
+chown apache:apache -R cache/
+chown apache:apache -R var/
+chown apache:apache settings/
+chmod -R 755 cache/
 php artisan serve
 ```
 
