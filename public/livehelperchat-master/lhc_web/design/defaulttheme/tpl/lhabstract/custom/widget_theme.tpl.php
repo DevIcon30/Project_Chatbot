@@ -72,15 +72,11 @@
                     </div>
 
                         <div class="form-group">
-						<label><?php echo erLhcoreClassAbstract::renderInput('modern_look', $fields['modern_look'], $object)?><?php echo $fields['modern_look']['trans'];?></label>
-						</div>
-
-                        <div class="form-group">
-						<label><?php echo erLhcoreClassAbstract::renderInput('drag_enabled', $fields['drag_enabled'], $object)?><?php echo $fields['drag_enabled']['trans'];?></label>
+						<label><?php echo erLhcoreClassAbstract::renderInput('modern_look', $fields['modern_look'], $object)?><?php echo $fields['modern_look']['trans'];?>*</label>
 						</div>
                     
                         <div class="form-group">
-						<label><?php echo erLhcoreClassAbstract::renderInput('load_w2', $fields['load_w2'], $object)?><?php echo $fields['load_w2']['trans'];?></label>
+						<label><?php echo erLhcoreClassAbstract::renderInput('load_w2', $fields['load_w2'], $object)?><?php echo $fields['load_w2']['trans'];?>*</label>
 						</div>
 
 						<div class="form-group">		
@@ -691,10 +687,6 @@
 
         		        <div class="form-group">
         		        <label><?php echo erLhcoreClassAbstract::renderInput('hide_mobile_nh', $fields['hide_mobile_nh'], $object)?> <?php echo $fields['hide_mobile_nh']['trans'];?></label>
-						</div>
-
-                        <div class="form-group">
-        		        <label><?php echo erLhcoreClassAbstract::renderInput('animate_nh', $fields['animate_nh'], $object)?> <?php echo $fields['animate_nh']['trans'];?></label>
 						</div>
 
         		        <div class="form-group">

@@ -1,5 +1,7 @@
 <?php
 
+ini_set('memory_limit', '2048M');
+
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 
@@ -78,5 +80,6 @@ $kernel = $app->make(Kernel::class);
 $response = $kernel->handle(
     $request = Request::capture()
 )->send();
+
 
 $kernel->terminate($request, $response);

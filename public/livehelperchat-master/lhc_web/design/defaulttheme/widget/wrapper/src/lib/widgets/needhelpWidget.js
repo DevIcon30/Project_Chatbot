@@ -18,7 +18,6 @@ export class needhelpWidget{
             height: "135px",
             position: "fixed",
             display: "none",
-            transition: "transform"
         }),  {"role":"presentation","translate":"no"}, "iframe");
 
         this.loadStatus = {main : false, theme: false, status: false};
@@ -102,11 +101,6 @@ export class needhelpWidget{
         attributes.sload.subscribe((data) => {if(data){this.loadStatus['status'] = true; this.checkLoadStatus()}});
 
         if (!settings['ap']) {
-
-            if (attributes.animate_nh) {
-                this.cont.massRestyle({"transition-duration" : "800ms"});
-            }
-
             attributes.eventEmitter.addListener('showInvitation', () => {
                 this.invitationOpen = true;
                 this.hide();
@@ -132,21 +126,6 @@ export class needhelpWidget{
 
             attributes.shidden.subscribe((data) => {
                 data ? this.hide(false) : this.show();
-            });
-
-            attributes.status_position.subscribe((data) => {
-
-                if (!data) {
-                    return;
-                }
-
-                let placementRestored = {};
-                placementRestored["bottom"] = data["bottom"];
-                placementRestored["top"] = data["top"];
-                placementRestored["left"] = data["left"];
-                placementRestored["right"] = data["right"];
-                placementRestored["transform"] = "translate3d("+ (data["left"] == "auto" ? -55 : 55) +"px," + (data["bottom"] == "auto" ? data["y"] + 70 : data["y"] - 60) + "px, 0px)!important";
-                this.cont.massRestyle(placementRestored);
             });
         }
 

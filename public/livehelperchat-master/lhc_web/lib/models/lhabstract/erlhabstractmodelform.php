@@ -24,8 +24,7 @@ class erLhAbstractModelForm {
 			'intro_attr' 	=> $this->intro_attr,
 			'xls_columns' 	=> $this->xls_columns,
 			'pagelayout' 	=> $this->pagelayout,
-			'post_content' 	=> $this->post_content,
-			'configuration' => $this->configuration
+			'post_content' 	=> $this->post_content
 		);
 
 		return $stateArray;
@@ -115,50 +114,26 @@ class erLhAbstractModelForm {
 	   			
 	   			return $this->xls_columns_data = $totalParts;
 
+	   		
 	   	case 'hide_delete':
 	   			return $this->hide_delete = !erLhcoreClassUser::instance()->hasAccessTo('lhform','delete_fm');
-
-       case 'configuration_array':
-           $attr = str_replace('_array','',$var);
-           if (!empty($this->{$attr})) {
-               $jsonData = json_decode($this->{$attr},true);
-               if ($jsonData !== null) {
-                   $this->{$var} = $jsonData;
-               } else {
-                   $this->{$var} = array();
-               }
-           } else {
-               $this->{$var} = array();
-           }
-           return $this->{$var};
 
 	   	default:
 	   		break;
 	   }
 	}
 
-    public function beforeUpdate()
-    {
-        $this->configuration = json_encode($this->configuration_array);
-    }
-
-    public function beforeSave()
-    {
-        $this->configuration = json_encode($this->configuration_array);
-    }
-
    	public $id = null;
 	public $name = '';
-	public $content = '';
+	public $content = '';	
 	public $active = 1;
 	public $recipient = '';
 	public $name_attr = '';
-	public $intro_attr = '';
-	public $xls_columns = '';
-	public $pagelayout = '';
-	public $post_content = '';
-	public $configuration = '';
-
+	public $intro_attr = '';	
+	public $xls_columns = '';	
+	public $pagelayout = '';	
+	public $post_content = '';	
+	
 	public $hide_add = false;
 
 }
