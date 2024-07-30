@@ -136,6 +136,19 @@
             transition: border-color 0.3s;
         } */
 
+        .list{
+            border: 1px solid #eaeaea;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+            flex: 1;
+            padding: 15px;
+            margin-left: -10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
         .icon{
             width: 15px;
             height: 15px;

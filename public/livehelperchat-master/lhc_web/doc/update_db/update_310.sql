@@ -1,1 +1,0 @@
-ALTER TABLE `lh_chat_online_user` ADD INDEX `first_visit` (`first_visit`), ALGORITHM=INPLACE, LOCK=NONE;

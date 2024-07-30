@@ -1,1 +1,0 @@
-ALTER TABLE `lh_chat` ADD `cls_us` tinyint(1) NOT NULL DEFAULT '0', COMMENT='';

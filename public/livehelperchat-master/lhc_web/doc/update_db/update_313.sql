@@ -1,1 +1,0 @@
-ALTER TABLE `lh_abstract_form` ADD `configuration` longtext NOT NULL, COMMENT='';
