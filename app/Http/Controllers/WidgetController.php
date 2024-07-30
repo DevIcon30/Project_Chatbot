@@ -17,4 +17,9 @@ class WidgetController extends Controller
     {
         return redirect()->back()->with('success','test berhasil');
     }
+
+    public function testclient()
+    {
+        return view('bot');
+    }
 }

@@ -6,15 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <p>bidy</p>
-    <script>
-        var LHC_API = LHC_API||{};
-        LHC_API.args = {mode:'widget',lhc_base_url:'//localhost:8000/index.php/',wheight:450,wwidth:350,pheight:520,pwidth:500,leaveamessage:true,check_messages:false};
+    <script type="text/javascript">
+        var LHCChatOptions = {};
+        LHCChatOptions.opt = {widget_height:340,widget_width:300,popup_height:520,popup_width:500};
         (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.setAttribute('crossorigin','anonymous'); po.async = true;
-        var date = new Date();po.src = '//localhost:8000/design/defaulttheme/js/widgetv2/index.js?'+(""+date.getFullYear() + date.getMonth() + date.getDate());
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
+        var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
+        po.src = '//localhost:8000/index.php/chat/getstatus/(click)/internal/(position)/bottom_right/(ma)/br/(top)/350/(units)/pixels/(leaveamessage)/true/(department)/1?r='+referrer+'&l='+location;
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
         })();
-    </script>
+        </script>
 </body>
 </html>

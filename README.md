@@ -63,24 +63,14 @@ After install don't forget to edit `.env` file and put database logins.
 
 Now in any extension or core file you should be able to use any Laravel class and vica versa.
 
-## Setup for backend webhook with Express.js
-
-Requirement
-* node module V.18
-* npm version
-* Ngrok authenticate
-* database connect to livehelperchat
-
-## NOTES
+## Task Mangkrak
 
 * perbaikan FE ada di route:"/chat"|| views/chat.blade.php
 * Folder html nya ada di /public/widget
 * inject database tambahan untuk webhook in folder public/livehelperchat-master/lhc_web/extension/lhctelegram/doc/install.sql to mysql
-* port connection database default: root/ /3306
-* masih error ngepost ke db pakai NGROK di express.js
-* documentasi setup webhook in telegram https://www.youtube.com/watch?v=wObbEaeopRU
+* port connection database default: root/{password}/3306
 
-## ETHICAL PUSH GIT REPOSITORY
+## Ethical Push Commit GIT Repository
 
 ```shell script
 cd public
@@ -90,6 +80,15 @@ git add .
 git commit -m "your_commit"
 git push (your_branch)
 ```
+
+## Setup Integration && Configuration
+* Bot Configuration
+  * settings -> live help configuration -> bot configuration -> triger
+* Embed Code Configuration
+  * settings -> live help configuration -> embed code -> widget or page legacy
+* Departments configuration
+  * settings -> live help configuration -> Chat Departments -> Departments
+* 
 
 ## MADE IN KONGO
 

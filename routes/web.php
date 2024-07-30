@@ -15,3 +15,4 @@ use App\Http\Controllers\WidgetController;
 */
 Route::any('/dummy', [LegacyController::class, 'index'])->name( 'lhc.start_me');
 Route::get('/chat',[WidgetController::class,'index'])->name('widget');
+Route::get('/chat-bot',[WidgetController::class,'testclient'])->name('bot');
